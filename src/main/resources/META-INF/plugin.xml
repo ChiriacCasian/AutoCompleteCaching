@@ -9,10 +9,17 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.chiriaccasian.autocompletecaching.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <inline.completion.provider implementation="com.github.chiriaccasian.autocompletecachingkotlinpackage.SimpleInlineCompletionProvider"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.chiriaccasian.autocompletecaching.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.chiriaccasian.autocompletecaching.Frontend.TopBarButton"
+                class="com.github.chiriaccasian.autocompletecaching.Frontend.TopBarButton"
+                text="AutoComplete Caching Menu">
+            <add-to-group group-id="ToolsBasicGroup" anchor="last"/>
+        </action>
+    </actions>
+
 </idea-plugin>
