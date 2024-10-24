@@ -34,7 +34,7 @@ dependencies {
     testImplementation(libs.junit)
     implementation("io.github.ollama4j:ollama4j:1.0.79")
     testImplementation("org.mockito:mockito-core:4.0.0")
-    testImplementation("org.mockito:mockito-inline:4.0.0")
+    testImplementation("org.mockito:mockito-inline:5.2.0")
 
     // IntelliJ Platform Gradle Plugin Dependencies Extension - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-dependencies-extension.html
     intellijPlatform {
